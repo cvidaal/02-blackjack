@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Node/Frontend
+node_modules/
+dist/
+build/
+.cache/
+.tmp/
+coverage/
+*.log
+
+# Secrets
+.env
