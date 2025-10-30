@@ -23,7 +23,7 @@
     <div class="row container">
         <div class="col">
             <h1>Jugador 1 - <small>0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/10C.png" alt="cartas"> -->
             </div>
         </div>
@@ -32,13 +32,19 @@
         <div class="row container mt-2">
         <div class="col">
             <h1>IA - <small>0</small></h1>
-            <div id="ia-cartas">
+            <div id="ia-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/10C.png" alt="cartas"> -->
             </div>
         </div>
     </div>
     <!-- Importación de código de javascript -->
-     <script src="assets/js/underscore-min.js"></script>
-    <script src="assets/js/juego.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <!-- <script src="assets/js/juego.js"></script> -->
+    <script src="assets/js/juego-min.js"></script>
+    <script>
+        document.querySelector('#btnNuevo').addEventListener('click', () => {
+            miModulo.nuevoJuego();
+        });
+    </script>
 </body>
 </html>
